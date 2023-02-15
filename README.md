@@ -1,5 +1,8 @@
-# rust-new-project-template
-A good starting point for a new Rust project
+# Week 4 rust mini project
+This project allow you count the number words in a text file and tell you how many different words are there in this file.
+
+# Usage
+cargo run "file name"
 
 ## References
 

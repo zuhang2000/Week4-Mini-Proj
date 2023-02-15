@@ -1,0 +1,14 @@
+Chunking: GFS breaks up files into fixed-size "chunks" of 64 megabytes each. This allows for efficient parallel processing of large files, since each chunk can be processed independently on a separate machine.
+
+Master-slave architecture: GFS uses a master-slave architecture, in which a single "master" node manages metadata about the files stored on the system, while multiple "chunkserver" nodes store and serve the actual data. This design allows for efficient coordination and fault-tolerance, since the master node can quickly locate data chunks even if some chunk servers fail.
+
+Data replication: GFS automatically replicates data across multiple chunk servers to ensure fault tolerance and high availability. By default, each chunk is replicated to three separate servers, although this value can be tuned based on specific application needs.
+
+Lazy space allocation: GFS uses a "lazy space allocation" mechanism, in which file storage space is only allocated when it is actually needed. This allows for more efficient use of disk space, since empty space is not reserved until it is actually required.
+Chunking: GFS breaks up files into fixed-size "chunks" of 64 megabytes each. This allows for efficient parallel processing of large files, since each chunk can be processed independently on a separate machine.
+
+Master-slave architecture: GFS uses a master-slave architecture, in which a single "master" node manages metadata about the files stored on the system, while multiple "chunkserver" nodes store and serve the actual data. This design allows for efficient coordination and fault-tolerance, since the master node can quickly locate data chunks even if some chunk servers fail.
+
+Data replication: GFS automatically replicates data across multiple chunk servers to ensure fault tolerance and high availability. By default, each chunk is replicated to three separate servers, although this value can be tuned based on specific application needs.
+
+Lazy space allocation: GFS uses a "lazy space allocation" mechanism, in which file storage space is only allocated when it is actually needed. This allows for more efficient use of disk space, since empty space is not reserved until it is actually required.
